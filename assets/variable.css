@@ -1,0 +1,14 @@
+:root {
+  --link: #1a1a1a;
+  --primary-color: #088178;
+  --border-color: #cce7d0;
+  --secondary-color: #465b52;
+  --shadow-item: 20px 20px 30px rgba(0, 0, 0, 0.03);
+  --white: #fff;
+  --black: #000;
+  --padding: 10px 0;
+  --animation: 0.3s ease;
+  --margin-top: 60px;
+  --border-secondary: #e1e1e1;
+  --border-thirdly: #e2e9e1;
+}

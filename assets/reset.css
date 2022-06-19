@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  font-family: "Spartan", sans-serif;
+  width: 100%;
+  font-size: 16px;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  color: #222;
+}
+
+p {
+  font-size: 16px;
+  color: var(--secondary-color);
+  margin: 15px 0 20px 0;
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 46px;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  background-color: var(--white);
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+button.white {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: var(--white);
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid var(--white);
+  outline: none;
+  transition: 0.2s;
+}
+
+/* Font Family */
+
+@font-face {
+  font-family: Spartan;
+  src: url("../fonts/Spartan-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: Spartan;
+  src: url("../fonts/Spartan-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Spartan;
+  src: url("../fonts/Spartan-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Spartan;
+  src: url("../fonts/Spartan-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Spartan;
+  src: url("../fonts/Spartan-Regular.ttf");
+  font-weight: 400;
+}
+/* Scroll */
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
