@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>E-commerce website</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/svg+xml" />
     <link rel="stylesheet" href="./assets/reset.css" />
     <link rel="stylesheet" href="./assets/variable.css" />
     <link rel="stylesheet" href="./assets/style.css" />
@@ -20,9 +21,23 @@
   </head>
   <body>
     <header class="header">
-      <a href="#"><img src="./img/logo.png" alt="" /></a>
+      <a href="index.html"><img src="./img/logo.png" alt="" /></a>
       <div>
+        <label for="nav-mobile-input" class="menu-icon">
+          <ion-icon name="menu"></ion-icon>
+        </label>
+        <input
+          type="checkbox"
+          name=""
+          hidden="true"
+          class="nav__input"
+          id="nav-mobile-input"
+        />
+        <label for="nav-mobile-input" class="nav-overlay"></label>
         <ul class="menu">
+          <label for="nav-mobile-input" class="menu__mobile-close">
+            <ion-icon name="close"></ion-icon>
+          </label>
           <li>
             <a class="menu-link active" href="index.html">Home</a>
           </li>
@@ -44,7 +59,7 @@
             </a>
           </li>
         </ul>
-        <ion-icon name="menu" class="menu-icon"></ion-icon>
+        <!-- Input -->
       </div>
     </header>
 

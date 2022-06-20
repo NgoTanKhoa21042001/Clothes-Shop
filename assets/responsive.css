@@ -12,10 +12,23 @@
     right: 0;
     background-color: #e3e6f3;
     height: 100vh;
-    width: 0;
+    width: 300px;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
-    padding: 80px 0 0 0;
+    padding: 28px 0 0 28px;
     gap: 25px;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: all 0.3s linear;
+  }
+  .menu li,
+  .menu li a {
+    width: 100%;
+  }
+  .nav__input:checked ~ .menu {
+    transform: translateX(0);
+  }
+  .menu__mobile-close {
+    display: block;
   }
   .menu-icon {
     display: block;
@@ -105,6 +118,9 @@
   }
   h2 {
     font-size: 32px;
+  }
+  .menu {
+    width: 200px;
   }
   .hero {
     margin-top: 60px;

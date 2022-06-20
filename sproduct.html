@@ -20,11 +20,25 @@
   </head>
   <body>
     <header class="header">
-      <a href="#"><img src="./img/logo.png" alt="" /></a>
+      <a href="index.html"><img src="./img/logo.png" alt="" /></a>
       <div>
+        <label for="nav-mobile-input" class="menu-icon">
+          <ion-icon name="menu"></ion-icon>
+        </label>
+        <input
+          type="checkbox"
+          name=""
+          hidden="true"
+          class="nav__input"
+          id="nav-mobile-input"
+        />
+        <label for="nav-mobile-input" class="nav-overlay"></label>
         <ul class="menu">
+          <label for="nav-mobile-input" class="menu__mobile-close">
+            <ion-icon name="close"></ion-icon>
+          </label>
           <li>
-            <a class="menu-link" href="index.html">Home</a>
+            <a class="menu-link active" href="index.html">Home</a>
           </li>
           <li>
             <a class="menu-link" href="shop.html">Shop</a>
@@ -44,17 +58,17 @@
             </a>
           </li>
         </ul>
-        <ion-icon name="menu" class="menu-icon"></ion-icon>
+        <!-- Input -->
       </div>
     </header>
 
     <section class="prodetails section-p1">
       <div class="single-pro-image">
-        <img src="./img/products/f1.jpg" width="100%" id="MainImage" alt="" />
+        <img src="./img/products/n1.jpg" width="100%" id="MainImage" alt="" />
         <div class="small-img-group">
           <div class="small-img-col">
             <img
-              src="./img/products/f1.jpg"
+              src="./img/products/n1.jpg"
               width="100%"
               class="small-img"
               alt=""

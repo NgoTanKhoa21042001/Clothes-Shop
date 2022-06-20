@@ -11,6 +11,31 @@
   left: 0;
   z-index: 999;
 }
+
+.nav-overlay {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  display: none;
+}
+.nav__input:checked ~ .nav-overlay {
+  display: block;
+}
+
+.menu__mobile-close {
+  font-size: 28px;
+  position: relative;
+  left: -9%;
+  color: #6e6e6e;
+  display: none;
+}
+.nav__input:checked ~ h1 {
+  color: red;
+}
 /* Menu */
 .menu {
   display: flex;
@@ -513,8 +538,10 @@ footer .install img {
   gap: 12px;
   margin-top: 8px;
 }
-.small-img-col {
-  cursor: pointer;
+.small-img-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .prodetails .single-pro-details {
